@@ -13,6 +13,7 @@ var authenticate = require('./routes/authenticate.route');
 var user = require('./routes/user.route');
 var register = require('./routes/register.route');
 
+
 // create the app
 var app = express();
 var port = process.env.PORT || 5000;
@@ -40,6 +41,11 @@ app.use(passport.session());
 /** Routes **/
 app.use('/register', register);
 app.use('/user', user);
+
+// Routers
+let spotsRouter = require('./routers/spots-router');
+app.use('/spots', spotsRouter);
+
 
 // handles redirect from passport login failure
 app.use('/loginFailure', function(req, res) {

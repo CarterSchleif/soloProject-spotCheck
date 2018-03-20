@@ -3,4 +3,14 @@ myApp.controller('AddController', ['UserService', function(UserService) {
     var self = this;
     self.userService = UserService;
     self.userObject = UserService.userObject;
+    self.newSpot = UserService.newSpot;
+    self.allSpots = UserService.allSpots;
+    self.addSpot = UserService.addSpot;
+    self.getAllSpots = UserService.getAllSpots;
+    
+
+
+
+
+
   }]);

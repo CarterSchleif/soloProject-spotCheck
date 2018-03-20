@@ -4,7 +4,7 @@
 }
 
 .instructions {
-    background-color: #333333;
+    background-color: #1b3b6a;
     color: #DDDDDD;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .navbar {
-  background-color: #333333;
+  background-color: #1b3b6a;
   width: 100%;
   border-radius: 0px;
 
@@ -74,4 +74,18 @@ li a:hover {
 }
 .logout{
     float: right;
+}
+#addSpot{
+    text-align: center;
+}
+#addSpotHeader{
+    text-align: center;
+}
+th{
+    padding: 6px;
+    text-align: center;
+}
+td{
+    padding: 6px;
+    text-align: center;
 }
