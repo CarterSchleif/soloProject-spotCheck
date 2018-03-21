@@ -3,7 +3,8 @@ myApp.service('UserService', ['$http', '$location', function ($http, $location) 
   
   var self = this;
 
-  self.allSpots = { list: [] }
+  self.allSpots = { list: [] };
+  self.mySpots = { list: [] };
   self.userObject = {};
   self.newSpot = {};
 
@@ -54,7 +55,7 @@ self.getAllSpots = () => {
       url: '/spots'
   }).then( (response) => {
       self.allSpots.list = response.data; 
-      console.log(self.allSpots);
+      console.log('these are all the spots:', self.allSpots.list);
   }).catch( (error) => {
       console.log('error in self.getAllSpots:', error);
   }); // END $http

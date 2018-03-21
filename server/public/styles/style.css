@@ -82,10 +82,30 @@ li a:hover {
     text-align: center;
 }
 th{
-    padding: 6px;
+    padding: 10px;
     text-align: center;
+    text-decoration: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
 }
 td{
-    padding: 6px;
+    padding: 10px;
     text-align: center;
 }
+#logInScreen{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+}
+#homeDiv{
+    text-align: center;
+}
+#searchInput{
+    margin-top: 15px;
+    font-size: 22px;
+}
+#searchBtn{
+    font-size: 22px;
+}
+
+

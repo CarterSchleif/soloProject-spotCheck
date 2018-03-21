@@ -4,6 +4,7 @@ myApp.controller('SpotsController', ['UserService', function(UserService) {
     self.userService = UserService;
     self.userObject = UserService.userObject;
     self.allSpots = UserService.allSpots;
+    self.mySpots = UserService.mySpots;
     self.getAllSpots = UserService.getAllSpots;
     self.deleteSpot = UserService.deleteSpot;
     self.getAllSpots();

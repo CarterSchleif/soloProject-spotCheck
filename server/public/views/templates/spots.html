@@ -1,25 +1,24 @@
-<div ng-include="'views/partials/nav.html'"></div>
 <h1>MySpots</h1>
 <hr />
 
-<div>
-
-<table id="spotsTable" ng-repeat="spot in vm.allSpots.list">
-    <thead>
-        <th>SpotRating</th>
-        <th>SkillLevel</th>
-        <th>Location</th>
-        <th>SpotDescription</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>{{spot.spotRating}}</td>
-            <td>{{spot.skillLevel}}</td>
-            <td>{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
-            <td>{{spot.description}}</td>
-            <td><button ng-click="vm.deleteSpot(spot._id)">Delete</button></td>
-        </tr>
-    </tbody>
-</table>
-<hr />
+<div ng-repeat="spot in vm.allSpots.list">
+    <table id="spotsTable" ng-if="spot.postedBy === vm.userObject.userName">
+            <thead>
+                <th>PostedBy</th>
+                <th>SpotRating</th>
+                <th>SkillLevel</th>
+                <th>Location</th>
+                <th>SpotDescription</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{spot.postedBy}}</td>
+                    <td>{{spot.spotRating}}</td>
+                    <td>{{spot.skillLevel}}</td>
+                    <td>{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
+                    <td>{{spot.description}}</td>
+                    <td><button ng-click="vm.deleteSpot(spot._id)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
 </div>
