@@ -10,7 +10,7 @@
     <br>
     <br>
     <br>
-    <div ng-repeat="spot in vm.allSpots.list | filter: searchBox">
+    <div>
             <table id="searchTable">
                     <thead>
                         <th class="th">PostedBy</th>
@@ -20,7 +20,7 @@
                         <th class="th">SpotDescription</th>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr ng-repeat="spot in vm.allSpots.list | filter: searchBox">
                             <td class="td">{{spot.postedBy}}</td>
                             <td class="td">{{spot.spotRating}}</td>
                             <td class="td">{{spot.skillLevel}}</td>

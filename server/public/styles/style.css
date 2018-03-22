@@ -11,6 +11,10 @@
 #entryForm {
     margin-top: 14px;
 }
+/* body{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4gGdgB-HVL6-uOC2LlE_7ZW-ZxxgPHDRvx9SE7DPWL2xpMWm) no-repeat center center fixed;
+    background-size: 1100px 840px;
+} */
 
 #container {
     margin-top: 10px;
@@ -110,6 +114,9 @@ td{
     text-align: center;
     margin-top: 150px;
     font-size: 20px;
+}
+#loginBackground{
+    background: url() no-repeat center center fixed;
 }
 #homeDiv{
     text-align: center;
