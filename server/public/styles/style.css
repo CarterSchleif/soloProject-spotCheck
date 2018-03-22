@@ -81,6 +81,20 @@ li a:hover {
 #addSpotHeader{
     text-align: center;
 }
+.th{
+    padding: 10px;
+    text-align: center;
+    text-decoration: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    padding-left: 95px;
+}
+
+.td{
+    padding: 10px;
+    padding-left: 95px;
+    text-align: center;
+}
 th{
     padding: 10px;
     text-align: center;
@@ -107,5 +121,36 @@ td{
 #searchBtn{
     font-size: 22px;
 }
+.editInputs{
+    inline-size: 75px;
+}
+.input1{
+    inline-size: 35px;
+}
+.input2{
+    inline-size: 105px;
+}
+.input3{
+    inline-size: 125px;
+}
+.input4{
+    inline-size: 125px;
+}
+.input5{
+    inline-size: 100px;
+}
+.input6{
+    inline-size: 60px;
+}
+.input7{
+    inline-size: 30px;
+}
+.input8{
+    inline-size: 30px;
+}
+.input9{
+    inline-size: 140px;
+}
+
 
 

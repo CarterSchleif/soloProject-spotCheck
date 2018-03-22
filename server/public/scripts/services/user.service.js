@@ -7,6 +7,7 @@ myApp.service('UserService', ['$http', '$location', function ($http, $location) 
   self.mySpots = { list: [] };
   self.userObject = {};
   self.newSpot = {};
+  self.editedSpot = {};
 
   self.getuser = function () {
     $http.get('/user').then(function (response) {
@@ -77,5 +78,22 @@ self.deleteSpot = function(id){
     console.log('error', error);
   }) // end fail
   } // end deleteSpot
+
+  self.submitEditSpot = (spot) => {
+    const id = spot._id
+    const updatedSpot = spot;
+    $http({
+        method: 'PUT',
+        url: `/spots/${id}`,
+        data: updatedSpot,
+    }).then( (response) => {
+        console.log('Edited spot', response);
+        self.editedSpot = {}; // reset self.editedSpot to empty object
+        self.getAllSpots();
+    }).catch( (error) => {
+        console.log('error in self.editSpot');
+    }); // END $http
+} // END self.editSpot
+
 
 }]);

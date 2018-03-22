@@ -14,12 +14,15 @@
         <script type="text/javascript" src="scripts/controllers/tops.controller.js"></script>
         <script type="text/javascript" src="scripts/controllers/add.controller.js"></script>
         <script type="text/javascript" src="scripts/controllers/spots.controller.js"></script>
+        <script type="text/javascript" src="scripts/controllers/nav.controller.js"></script>
         <script type="text/javascript" src="scripts/services/user.service.js"></script>
     </head>
 
     <body ng-app="myApp">
       <header ng-include="'/views/partials/header.html'"></header>
+      <div ng-controller="NavController as vm">
       <div ng-include="'views/partials/nav.html'"></div>
+    </div>
       <main ng-view class="container">
 
       </main>
