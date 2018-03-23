@@ -7,6 +7,7 @@ myApp.controller('AddController', ['UserService', function(UserService) {
     self.allSpots = UserService.allSpots;
     self.addSpot = UserService.addSpot;
     self.getAllSpots = UserService.getAllSpots;
+    self.upload = UserService.upload;
     
 
 

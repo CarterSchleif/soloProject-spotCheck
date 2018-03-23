@@ -8,6 +8,20 @@ myApp.service('UserService', ['$http', '$location', function ($http, $location) 
   self.userObject = {};
   self.newSpot = {};
   self.editedSpot = {};
+  self.client = filestack.init("AYpvE9ArwS6eQkUSqQxtLz");
+
+
+self.upload = function(){
+  console.log('In upload');
+  self.client.pick({
+    accept:'image/*',
+    maxFiles: 1
+  }).then(function(result){
+    alert("Upload succesfull");
+    self.newSpot.imgUrl = result.filesUploaded[0].url;
+    console.log('This is the img:', self.newSpot.imgUrl);
+  })
+}
 
   self.getuser = function () {
     $http.get('/user').then(function (response) {
