@@ -91,12 +91,12 @@ li a:hover {
     text-decoration: black;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    padding-left: 95px;
+    padding-left: 40px;
 }
 
 .td{
     padding: 10px;
-    padding-left: 95px;
+    padding-left: 40px;
     text-align: center;
 }
 th{

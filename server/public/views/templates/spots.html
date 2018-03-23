@@ -5,6 +5,7 @@
     <table id="spotsTable">
             <thead>
                 <th>PostedBy</th>
+                <th>Image</th>
                 <th>SpotRating</th>
                 <th>SkillLevel</th>
                 <th>Location</th>
@@ -14,6 +15,8 @@
                 <tr ng-repeat="spot in vm.allSpots.list" ng-if="spot.postedBy === vm.userObject.userName">
                     <td ng-hide="spot.beingEdited">{{spot.postedBy}}</td>
                     <td ng-show="spot.beingEdited">{{spot.postedBy}}</td>
+                    <td ng-hide="spot.beingEdited"><img src="{{spot.imgUrl}}" width="250px"></td>
+                    <td ng-show="spot.beingEdited"><button id="uploadBtn" ng-click="vm.upload()" class="btn btn-warning">Upload Image</button></td>
                     <td ng-hide="spot.beingEdited">{{spot.spotRating}}</td>
                     <td ng-show="spot.beingEdited" class="editable">SpotRating<select class="input1" ng-model="spot.spotRating" ng-value="spot.spotRating">
                             <option value="1">1</option>

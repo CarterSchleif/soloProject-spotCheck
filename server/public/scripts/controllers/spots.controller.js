@@ -9,6 +9,8 @@ myApp.controller('SpotsController', ['UserService', function(UserService) {
     self.deleteSpot = UserService.deleteSpot;
     self.editedSpot = UserService.editedSpot;
     self.submitEditSpot = UserService.submitEditSpot;
+    self.upload = UserService.upload;
+    
 
     //Show and Hide edit forms
     self.showEditForm = (spot) => {

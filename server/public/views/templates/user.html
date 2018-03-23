@@ -14,6 +14,7 @@
             <table id="searchTable">
                     <thead>
                         <th class="th">PostedBy</th>
+                        <th class="th">Image</th>
                         <th class="th">SpotRating</th>
                         <th class="th">SkillLevel</th>
                         <th class="th">Location</th>
@@ -22,6 +23,7 @@
                     <tbody>
                         <tr ng-repeat="spot in vm.allSpots.list | filter: searchBox">
                             <td class="td">{{spot.postedBy}}</td>
+                            <td class="td"><img src="{{spot.imgUrl}}" width="250px"></td>
                             <td class="td">{{spot.spotRating}}</td>
                             <td class="td">{{spot.skillLevel}}</td>
                             <td class="td">{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
