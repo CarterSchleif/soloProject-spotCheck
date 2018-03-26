@@ -1,8 +1,8 @@
 {
   "_from": "angular",
-  "_id": "angular@1.6.7",
+  "_id": "angular@1.6.9",
   "_inBundle": false,
-  "_integrity": "sha1-D4mDfa4XdrAcyx+iCW2w2Tc9mJc=",
+  "_integrity": "sha512-6igWH2GIsxV+J38wNWCh8oyjaZsrIPIDO35twloIUyjlF2Yit6UyLAWujHP05ma/LFxTsx4NtYibRoMNBXPR1A==",
   "_location": "/angular",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angular/-/angular-1.6.7.tgz",
-  "_shasum": "0f89837dae1776b01ccb1fa2096db0d9373d9897",
+  "_resolved": "https://registry.npmjs.org/angular/-/angular-1.6.9.tgz",
+  "_shasum": "bc812932e18909038412d594a5990f4bb66c0619",
   "_spec": "angular",
-  "_where": "/Users/lukeschlangen/Desktop/prime-passport-local-strategy",
+  "_where": "/Users/carterschleif/Prime/soloProject-spotCheck",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -50,5 +50,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.6.7"
+  "version": "1.6.9"
 }

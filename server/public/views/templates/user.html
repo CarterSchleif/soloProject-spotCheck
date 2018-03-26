@@ -1,11 +1,15 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form>
 <div id="homeDiv" class="container">
 
     <h1 id="welcome" class="lead">Welcome, {{vm.userObject.userName}}!</h1>
    
     <h1>Find a Spot!</h1>
     <hr />
-
-    <input id="searchInput" ng-model="searchBox" type="text" placeholder="Search Something!"><button id="searchBtn">Search</button>
+    <md-input-container>
+            <label>Search</label>
+    <input id="searchInput" ng-model="searchBox" type="text">
+</md-input-container>
     <br>
     <br>
     <br>
@@ -32,5 +36,12 @@
                     </tbody>
                 </table>
         </div>
-
+    
 </div>
+</form>
+
+
+
+
+
+

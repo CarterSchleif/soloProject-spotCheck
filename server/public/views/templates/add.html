@@ -1,41 +1,69 @@
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form>
 <h1 id="addSpotHeader">AddSpot</h1>
 <hr />
 
-<!-- Add photo here with filestack -->
 
 
 <div id="addSpot">
 <h2>Location</h2>
-    <button id="uploadBtn" ng-click="vm.upload()" class="btn btn-warning">Upload Image</button>
-    <input type="text" ng-model="vm.newSpot.streetOne" placeholder="Street One">
-    <input type="text" ng-model="vm.newSpot.streetTwo" placeholder="Street Two">
-    <input type="text" ng-model="vm.newSpot.city" placeholder="City">
-    <input type="number" ng-model="vm.newSpot.zipCode" placeholder="Zip Code">
+    <md-button id="uploadBtn" ng-click="vm.upload()" class="md-raised md-primary btn btn-warning">Upload Image</md-button><br><br>
+    <md-input-container>
+            <label>Street One</label>
+    <input type="text" ng-model="vm.newSpot.streetOne">
+</md-input-container>
+    <md-input-container>
+            <label>Street Two</label>
+    <input type="text" ng-model="vm.newSpot.streetTwo">
+</md-input-container>
+    <md-input-container>
+            <label>City</label>
+    <input type="text" ng-model="vm.newSpot.city">
+</md-input-container>
+    <md-input-container>
+            <label>Zip Code</label>
+    <input type="number" ng-model="vm.newSpot.zipCode">
+</md-input-container>
     <br>
     <hr />
-    <input type="text" ng-model="vm.newSpot.state" placeholder="State">
-    <input type="text" ng-model="vm.newSpot.country" placeholder="Country">
+    <md-input-container>
+            <label>State</label>
+    <input type="text" ng-model="vm.newSpot.state">
+</md-input-container>
+    <md-input-container>
+            <label>Country</label>
+    <input type="text" ng-model="vm.newSpot.country">
+</md-input-container>
     <br>
     <hr />
-    <h5>Spot Rating</h5>
-    <select ng-model="vm.newSpot.spotRating">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-    <h5>Skill Level</h5>
-    <select ng-model="vm.newSpot.skillLevel">
-        <option value="beginner">Beginner</option>
-        <option value="novice">Novice</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="pro">Pro</option>
-        <option value="expert">Expert</option>
-    </select>
+    <label>Spot Rating</label>
+    <md-card-content>
+            <div layout="row" layout-align="center center">
+    <md-select class="md-no-underline" ng-model="vm.newSpot.spotRating">
+        <md-option value="1">1</md-option>
+        <md-option value="2">2</md-option>
+        <md-option value="3">3</md-option>
+        <md-option value="4">4</md-option>
+        <md-option value="5">5</md-option>
+    </md-select>
+</div>
+    <label>Skill Level</label>
+    <md-card-content>
+            <div layout="row" layout-align="center center">
+    <md-select class="md-no-underline" ng-model="vm.newSpot.skillLevel">
+        <md-option value="beginner">Beginner</md-option>
+        <md-option value="novice">Novice</md-option>
+        <md-option value="intermediate">Intermediate</md-option>
+        <md-option value="pro">Pro</md-option>
+        <md-option value="expert">Expert</md-option>
+    </md-select>
+</div>
     <br>
     <hr />
     <textarea type="text" ng-model="vm.newSpot.description" cols="30" rows="5" placeholder="Description"></textarea><br><br>
-    <button ng-click="vm.addSpot(vm.newSpot)">AddSpot</button>
+    <md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-click="vm.addSpot(vm.newSpot)">AddSpot</md-button>
 </div>
+</form>
+
+
+

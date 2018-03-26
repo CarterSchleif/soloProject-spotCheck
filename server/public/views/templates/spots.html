@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form>
 <h1>MySpots</h1>
 <hr />
 
@@ -16,37 +18,71 @@
                     <td ng-hide="spot.beingEdited">{{spot.postedBy}}</td>
                     <td ng-show="spot.beingEdited">{{spot.postedBy}}</td>
                     <td ng-hide="spot.beingEdited"><img src="{{spot.imgUrl}}" width="250px"></td>
-                    <td ng-show="spot.beingEdited"><button id="uploadBtn" ng-click="vm.upload()" class="btn btn-warning">Upload Image</button></td>
+                    <td ng-show="spot.beingEdited"><md-button style="background-color: #1b3b6a;" id="uploadBtn" ng-click="vm.upload()" class="md-raised md-primary btn btn-warning">Upload Image</md-button></td>
                     <td ng-hide="spot.beingEdited">{{spot.spotRating}}</td>
-                    <td ng-show="spot.beingEdited" class="editable">SpotRating<select class="input1" ng-model="spot.spotRating" ng-value="spot.spotRating">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                    <md-card-content>
+                            <div layout="row" layout-align="space-between center">
+                    <td ng-show="spot.beingEdited" class="editable">SpotRating<md-select class="md-no-underline input1" ng-model="spot.spotRating" ng-value="spot.spotRating">
+                            <md-option value="1">1</md-option>
+                            <md-option value="2">2</md-option>
+                            <md-option value="3">3</md-option>
+                            <md-option value="4">4</md-option>
+                            <md-option value="5">5</md-option>
+                        </md-select>
                     </td>
+                </div>
                     <td ng-hide="spot.beingEdited">{{spot.skillLevel}}</td>
-                    <td ng-show="spot.beingEdited" class="editable">SkillLevel<select class="input2" ng-model="spot.skillLevel" ng-value="spot.skillLevel">
-                            <option value="beginner">Beginner</option>
-                            <option value="novice">Novice</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="pro">Pro</option>
-                            <option value="expert">Expert</option>
-                        </select>
+                    <md-card-content>
+                            <div layout="row" layout-align="space-between center">
+                    <td ng-show="spot.beingEdited" class="editable">SkillLevel<md-select class="md-no-underline input2" ng-model="spot.skillLevel" ng-value="spot.skillLevel">
+                            <md-option value="beginner">Beginner</md-option>
+                            <md-option value="novice">Novice</md-option>
+                            <md-option value="intermediate">Intermediate</md-option>
+                            <md-option value="pro">Pro</md-option>
+                            <md-option value="expert">Expert</md-option>
+                        </md-select>
                     </td>
+                </div>
                     <td ng-hide="spot.beingEdited">{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
+                    <md-input-container>
+                            <label>Street One</label>
                     <td ng-show="spot.beingEdited" class="editable">StreetOne<input class="input3" type="text" ng-model="spot.streetOne" ng-value="spot.streetOne"></td>
+                </md-input-container>
+                    <md-input-container>
+                            <label>Street Two</label>
                     <td ng-show="spot.beingEdited" class="editable">StreetTwo<input class="input4" type="text" ng-model="spot.streetTwo" ng-value="spot.streetTwo"></td>
+                </md-input-container>
+                    <md-input-container>
+                            <label>City</label>
                     <td ng-show="spot.beingEdited" class="editable">City<input class="input5" type="text" ng-model="spot.city" ng-value="spot.city"></td>
+                </md-input-container>
+                    <md-input-container>
+                            <label>Zip Code</label>
                     <td ng-show="spot.beingEdited" class="editable">ZipCode<input class="input6" type="number" ng-model="spot.zipCode" ng-value="spot.zipCode"></td>
+                </md-input-container>
+                    <md-input-container>
+                            <label>State</label>
                     <td ng-show="spot.beingEdited" class="editable">State<input class="input7" type="text" ng-model="spot.state" ng-value="spot.state"></td>
+                </md-input-container>
+                    <md-input-container>
+                            <label>Country</label>
                     <td ng-show="spot.beingEdited" class="editable">Country<input class="input8" type="text" ng-model="spot.country" ng-value="spot.country"></td>
+                </md-input-container>
+                    <md-input-container>
+                            <label>Description</label>
                     <td ng-hide="spot.beingEdited">{{spot.description}}</td>
                     <td ng-show="spot.beingEdited" class="editable">Description<input class="input9" type="text" ng-model="spot.description" ng-value="spot.description"></td>
-                    <td><button ng-hide="spot.beingEdited" ng-click="vm.deleteSpot(spot._id)">Delete</button><button ng-show="spot.beingEdited" ng-click="vm.cancelEdit(spot)">Cancel</button></td>
-                    <td><button ng-hide="spot.beingEdited" ng-click="vm.showEditForm(spot)">Edit</button> <button ng-show="spot.beingEdited" ng-click="vm.submitEditSpot(spot)">Submit</button></td>
+                </md-input-container>
+                    <td><md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-hide="spot.beingEdited" ng-click="vm.deleteSpot(spot._id)">Delete</md-button><md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-show="spot.beingEdited" ng-click="vm.cancelEdit(spot)">Cancel</md-button></td>
+                    <td><md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-hide="spot.beingEdited" ng-click="vm.showEditForm(spot)">Edit</md-button> <md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-show="spot.beingEdited" ng-click="vm.submitEditSpot(spot)">Submit</md-button></td>
                 </tr>
             </tbody>
         </table>
 </div>
+</form>
+
+
+
+
+
+
