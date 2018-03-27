@@ -60,8 +60,15 @@
 </div>
     <br>
     <hr />
-    <textarea type="text" ng-model="vm.newSpot.description" cols="30" rows="5" placeholder="Description"></textarea><br><br>
+    <md-input-container>
+            <label>Description</label>
+    <textarea type="text" ng-model="vm.newSpot.description" cols="30" rows="2"></textarea><br><br>
+</md-input-container>
+<section ng-click="vm.popUp()">
+<div ng-click="vm.newSpot = null">
     <md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-click="vm.addSpot(vm.newSpot)">AddSpot</md-button>
+</div>
+</section>
 </div>
 </form>
 

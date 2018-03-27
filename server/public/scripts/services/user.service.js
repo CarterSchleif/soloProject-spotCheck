@@ -110,4 +110,9 @@ self.deleteSpot = function(id){
 } // END self.editSpot
 
 
+self.popUp = function(){
+ let add = alert("Succesfully Added Spot!");
+}
+
+
 }]);

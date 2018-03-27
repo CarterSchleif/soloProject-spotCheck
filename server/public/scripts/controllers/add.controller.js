@@ -8,6 +8,9 @@ myApp.controller('AddController', ['UserService', function(UserService) {
     self.addSpot = UserService.addSpot;
     self.getAllSpots = UserService.getAllSpots;
     self.upload = UserService.upload;
+    self.popUp = UserService.popUp;
+    
+    
     
 
 

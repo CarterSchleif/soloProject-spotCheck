@@ -44,32 +44,26 @@
                     </td>
                 </div>
                     <td ng-hide="spot.beingEdited">{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
+                    
                     <md-input-container>
-                            <label>Street One</label>
                     <td ng-show="spot.beingEdited" class="editable">StreetOne<input class="input3" type="text" ng-model="spot.streetOne" ng-value="spot.streetOne"></td>
                 </md-input-container>
                     <md-input-container>
-                            <label>Street Two</label>
                     <td ng-show="spot.beingEdited" class="editable">StreetTwo<input class="input4" type="text" ng-model="spot.streetTwo" ng-value="spot.streetTwo"></td>
                 </md-input-container>
                     <md-input-container>
-                            <label>City</label>
                     <td ng-show="spot.beingEdited" class="editable">City<input class="input5" type="text" ng-model="spot.city" ng-value="spot.city"></td>
                 </md-input-container>
                     <md-input-container>
-                            <label>Zip Code</label>
                     <td ng-show="spot.beingEdited" class="editable">ZipCode<input class="input6" type="number" ng-model="spot.zipCode" ng-value="spot.zipCode"></td>
                 </md-input-container>
                     <md-input-container>
-                            <label>State</label>
                     <td ng-show="spot.beingEdited" class="editable">State<input class="input7" type="text" ng-model="spot.state" ng-value="spot.state"></td>
                 </md-input-container>
                     <md-input-container>
-                            <label>Country</label>
                     <td ng-show="spot.beingEdited" class="editable">Country<input class="input8" type="text" ng-model="spot.country" ng-value="spot.country"></td>
                 </md-input-container>
                     <md-input-container>
-                            <label>Description</label>
                     <td ng-hide="spot.beingEdited">{{spot.description}}</td>
                     <td ng-show="spot.beingEdited" class="editable">Description<input class="input9" type="text" ng-model="spot.description" ng-value="spot.description"></td>
                 </md-input-container>

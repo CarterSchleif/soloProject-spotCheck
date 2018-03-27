@@ -34,10 +34,12 @@
     </head>
 
     <body ng-app="myApp">
+<div id="headerDiv">
       <header ng-include="'/views/partials/header.html'"></header>
       <div ng-controller="NavController as vm">
       <div ng-include="'views/partials/nav.html'"></div>
     </div>
+</div>
       <main ng-view class="container">
 
       </main>

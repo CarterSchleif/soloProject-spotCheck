@@ -24,5 +24,6 @@ myApp.controller('SpotsController', ['UserService', function(UserService) {
     //On page load get all spots
     self.getAllSpots();
 
+    
 
   }]);
