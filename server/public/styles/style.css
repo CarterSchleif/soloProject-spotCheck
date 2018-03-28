@@ -115,6 +115,14 @@ td{
     margin-top: 150px;
     font-size: 20px;
 }
+#registerScreen{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+}
+#registerBtn{
+    color: #ddd;
+}
 #loginBackground{
     background: url() no-repeat center center fixed;
 }
