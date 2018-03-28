@@ -1,11 +1,11 @@
 .instructions .container h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 .instructions {
     background-color: #1b3b6a;
-    color: #DDDDDD;
+    color: white;
 }
 
 #entryForm {
@@ -86,7 +86,7 @@ li a:hover {
     text-align: center;
 }
 .th{
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     text-decoration: black;
     text-decoration-line: underline;
@@ -95,19 +95,19 @@ li a:hover {
 }
 
 .td{
-    padding: 10px;
+    padding: 8px;
     padding-left: 40px;
     text-align: center;
 }
 th{
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     text-decoration: black;
     text-decoration-line: underline;
     text-decoration-style: solid;
 }
 td{
-    padding: 10px;
+    padding: 8px;
     text-align: center;
 }
 #logInScreen{
@@ -164,6 +164,51 @@ td{
 #headerDiv{
     background-color: #1b3b6a;
 }
+#searchTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 7px;
+}
 
+#searchTable td, #searchTable th {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+#searchTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#searchTable tr:hover {background-color: #ddd;}
+
+#searchTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1b3b6a;
+    color: white;
+}
+#spotsTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 7px;
+}
+
+#spotsTable td, #searchTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#spotsTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#spotsTable tr:hover {background-color: #ddd;}
+
+#spotsTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1b3b6a;
+    color: white;
+}
 
 
