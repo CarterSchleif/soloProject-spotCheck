@@ -17,11 +17,11 @@
             </thead>
             <tbody>
                 <tr ng-repeat="spot in vm.allSpots.list" ng-if="spot.postedBy === vm.userObject.userName">
-                    <td ng-hide="spot.beingEdited">{{spot.postedBy}}</td>
+                    <td class="zoom" ng-hide="spot.beingEdited">{{spot.postedBy}}</td>
                     <td ng-show="spot.beingEdited">{{spot.postedBy}}</td>
-                    <td ng-hide="spot.beingEdited"><img src="{{spot.imgUrl}}" width="250px"></td>
+                    <td class="zoom" ng-hide="spot.beingEdited"><img src="{{spot.imgUrl}}" width="250px"></td>
                     <td ng-show="spot.beingEdited"><md-button style="background-color: #1b3b6a;" id="uploadBtn" ng-click="vm.upload()" class="md-raised md-primary btn btn-warning">Upload Image</md-button></td>
-                    <td ng-hide="spot.beingEdited">{{spot.spotRating}}</td>
+                    <td class="zoom" ng-hide="spot.beingEdited">{{spot.spotRating}}</td>
                     <md-card-content>
                             <div layout="row" layout-align="space-between center">
                     <td ng-show="spot.beingEdited" class="editable">SpotRating<md-select class="md-no-underline input1" ng-model="spot.spotRating" ng-value="spot.spotRating">
@@ -33,7 +33,7 @@
                         </md-select>
                     </td>
                 </div>
-                    <td ng-hide="spot.beingEdited">{{spot.skillLevel}}</td>
+                    <td class="zoom" ng-hide="spot.beingEdited">{{spot.skillLevel}}</td>
                     <md-card-content>
                             <div layout="row" layout-align="space-between center">
                     <td ng-show="spot.beingEdited" class="editable">SkillLevel<md-select class="md-no-underline input2" ng-model="spot.skillLevel" ng-value="spot.skillLevel">
@@ -45,7 +45,7 @@
                         </md-select>
                     </td>
                 </div>
-                    <td ng-hide="spot.beingEdited">{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
+                    <td class="zoom" ng-hide="spot.beingEdited">{{spot.streetOne}}, {{spot.streetTwo}}, <br>{{spot.city}}, {{spot.zipCode}}, {{spot.state}}, {{spot.country}}</td>
                     
                     <md-input-container>
                     <td ng-show="spot.beingEdited" class="editable">StreetOne<input class="input3" type="text" ng-model="spot.streetOne" ng-value="spot.streetOne"></td>
@@ -66,7 +66,7 @@
                     <td ng-show="spot.beingEdited" class="editable">Country<input class="input8" type="text" ng-model="spot.country" ng-value="spot.country"></td>
                 </md-input-container>
                     <md-input-container>
-                    <td ng-hide="spot.beingEdited">{{spot.description}}</td>
+                    <td class="zoom" ng-hide="spot.beingEdited">{{spot.description}}</td>
                     <td ng-show="spot.beingEdited" class="editable">Description<input class="input9" type="text" ng-model="spot.description" ng-value="spot.description"></td>
                 </md-input-container>
                     <td><md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-hide="spot.beingEdited" ng-click="vm.deleteSpot(spot._id)">Delete</md-button><md-button style="background-color: #1b3b6a;" class="md-raised md-primary" ng-show="spot.beingEdited" ng-click="vm.cancelEdit(spot)">Cancel</md-button></td>

@@ -236,4 +236,14 @@ td{
  #SpotCheckHeader{
      font-size: 40px;
  }
+ .zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
 
+.zoom:hover {
+    transform: scale(1.5);
+}
