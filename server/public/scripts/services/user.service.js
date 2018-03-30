@@ -111,7 +111,7 @@ self.deleteSpot = function(id){
 
 
 self.popUp = function(){
- let add = alert("Succesfully Added Spot to MySpots!");
+ let add = alert("Successfully Added Spot to MySpots!");
 }
 
 
