@@ -247,3 +247,13 @@ td{
 .zoom:hover {
     transform: scale(1.5);
 }
+#infoUl{
+    font-size: 25px;
+}
+#infoCredits{
+    font-size: 20px;
+    font-family: cursive;
+}
+#techUsed{
+    font-size: 40px;
+}
